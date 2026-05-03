@@ -560,13 +560,7 @@ ul { list-style: none; }
 .cta-box__actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
 /* ── Search Page ──────────────────────────────────────────────── */
-/* =========================
-   PAGE LAYOUT
-========================= */
 
-/* =========================
-   PAGE LAYOUT (SAFE + STABLE)
-========================= */
 
 .search-page {
   display: grid;
@@ -577,9 +571,6 @@ ul { list-style: none; }
   font-family: system-ui, -apple-system, Segoe UI, Roboto;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
 
 .search-page__sidebar {
   background: #ffffff;
@@ -604,9 +595,7 @@ ul { list-style: none; }
   gap: 14px;
 }
 
-/* =========================
-   HEADER
-========================= */
+
 
 .filter-panel__header {
   position: sticky;
@@ -629,9 +618,6 @@ ul { list-style: none; }
   color: #111827;
 }
 
-/* =========================
-   FILTER SECTIONS
-========================= */
 
 .filter-section {
   background: #f9fafb;
@@ -645,9 +631,6 @@ ul { list-style: none; }
   gap: 10px;
 }
 
-/* =========================
-   INPUTS / SELECT
-========================= */
 
 .filter-input,
 .filter-select {
@@ -671,10 +654,6 @@ ul { list-style: none; }
   box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
 }
 
-/* =========================
-   RESET BUTTON
-========================= */
-
 .filter-panel__header button {
   background: none;
   border: none;
@@ -684,9 +663,6 @@ ul { list-style: none; }
   cursor: pointer;
 }
 
-/* =========================
-   LABEL (if used later)
-========================= */
 
 .filter-label {
   font-size: 0.7rem;
@@ -696,9 +672,6 @@ ul { list-style: none; }
   color: #6b7280;
 }
 
-/* =========================
-   ADVANCED SECTION (SAFE)
-========================= */
 
 .filter-advanced {
   display: flex;
@@ -753,9 +726,7 @@ ul { list-style: none; }
 
   box-shadow: 0 10px 20px rgba(37,99,235,0.25);
 }
-/* =========================
-   RESULTS AREA
-========================= */
+
 
 .search-page__results {
   padding: 28px;
@@ -778,9 +749,7 @@ ul { list-style: none; }
   color: #111827;
 }
 
-/* =========================
-   TABLE (MODERN CLEAN)
-========================= */
+
 
 .results-table-wrapper {
   overflow-x: auto;
@@ -844,9 +813,7 @@ ul { list-style: none; }
   background-color: #f5f7fa;
   transform: scale(1.01);
 }
-/* =========================
-   RENTAL CARD (FIXED + MODERN)
-========================= */
+
 
 .rental-card {
   background: #fff;
@@ -952,9 +919,6 @@ ul { list-style: none; }
   color: #374151;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 1024px) {
   .search-page {
@@ -975,9 +939,7 @@ ul { list-style: none; }
   padding: 36px 0 70px;
   background: #f8fafc;
 }
-/* =========================
-   BREADCRUMB
-========================= */
+
 
 .breadcrumb {
   display: flex;
@@ -1012,9 +974,7 @@ ul { list-style: none; }
   font-weight: 600;
 }
 
-/* =========================
-   GRID LAYOUT
-========================= */
+
 
 .detail-page__grid {
   display: grid;
@@ -1030,9 +990,6 @@ ul { list-style: none; }
   gap: 16px;
 }
 
-/* =========================
-   HEADER
-========================= */
 
 .detail-page__header {
   display: flex;
@@ -1064,9 +1021,6 @@ ul { list-style: none; }
   white-space: nowrap;
 }
 
-/* =========================
-   STATS (MODERN DASHBOARD STYLE)
-========================= */
 
 .detail-stats {
   display: grid;
@@ -1115,9 +1069,6 @@ ul { list-style: none; }
   letter-spacing: 0.08em;
 }
 
-/* =========================
-   CARDS
-========================= */
 
 .detail-card {
   background: white;
@@ -1144,9 +1095,7 @@ ul { list-style: none; }
   border-bottom: 1px solid #f1f5f9;
 }
 
-/* =========================
-   DETAIL ROWS
-========================= */
+
 
 .detail-row {
   display: flex;
@@ -1176,9 +1125,7 @@ ul { list-style: none; }
   color: #9ca3af;
 }
 
-/* =========================
-   DESCRIPTION (IMPORTANT FIX)
-========================= */
+
 
 .detail-description {
   font-size: 0.95rem;
@@ -1190,9 +1137,7 @@ ul { list-style: none; }
   margin-bottom: 12px;
 }
 
-/* =========================
-   MAP
-========================= */
+
 
 .map-wrapper {
   background: white;
@@ -1219,9 +1164,6 @@ ul { list-style: none; }
   border-top: 1px solid #f1f5f9;
 }
 
-/* =========================
-   NEARBY
-========================= */
 
 .nearby-section {
   background: white;
@@ -1269,12 +1211,6 @@ ul { list-style: none; }
   font-weight: 700;
 }
 
-/* =========================
-   ⭐ RATING UI FIX (IMPORTANT)
-========================= */
-/* =========================
-   RATING SECTION (FIXED UI)
-========================= */
 
 .rating-avg {
   display: flex;
@@ -1382,9 +1318,6 @@ ul { list-style: none; }
   background: #890606;
   transform: translateY(-1px);
 }
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 1024px) {
   .detail-page__grid {
@@ -1408,9 +1341,23 @@ ul { list-style: none; }
   width: 100%;
   max-width: 420px;
   box-shadow: var(--shadow-lg);
+  text-align: center;
 }
-.auth-card__header { text-align: center; margin-bottom: 32px; }
-.auth-card__icon { font-size: 2.5rem; display: block; margin-bottom: 16px; }
+.auth-card__header { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.auth-card__icon { 
+    width: 70px;
+  height: auto;
+  display: block;
+  margin-bottom: 16px;
+  object-fit: contain;
+ }
 .auth-card__title { font-family: var(--font-display); font-size: 1.75rem; margin-bottom: 8px; }
 .auth-card__subtitle { color: var(--color-text-muted); font-size: 0.9rem; }
 .auth-card__footer { text-align: center; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 24px; }

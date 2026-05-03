@@ -39,7 +39,6 @@ const RentalCard = ({ rental }) => {
         </span>
       </div>
 
-      {/* CONTENT */}
       <div className="rental-card__content">
 
         <div className="rental-card__top">

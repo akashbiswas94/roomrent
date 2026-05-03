@@ -4,16 +4,11 @@ import { searchRentals, fetchStates, fetchPropertyTypes } from '../utils/api';
 import { LoadingState, ErrorState, EmptyState } from '../components/LoadingState';
 import Pagination from '../components/Pagination';
 
-/* =========================
-   PRICE FORMAT
-========================= */
+
 const formatPrice = (p) =>
   p != null ? `$${Number(p).toLocaleString('en-AU')}/wk` : '—';
 
-/* =========================
-   REVERSE GEOCODING
-   (OpenStreetMap - free)
-========================= */
+
 const getAddressFromCoords = async (lat, lng) => {
   try {
     const res = await fetch(
@@ -126,9 +121,7 @@ const SearchPage = () => {
     setPage(1);
   };
 
- 
   const rentals = results?.rentals || results?.data || [];
-
   const totalCount =
     results?.pagination?.total ||
     results?.total ||
@@ -138,7 +131,6 @@ const SearchPage = () => {
     results?.pagination?.lastPage ||
     results?.lastPage ||
     1;
-
 
   const getDisplayAddress = (r) => {
     const key = `${r.latitude},${r.longitude}`;

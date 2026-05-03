@@ -4,7 +4,6 @@ import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import { LoadingState } from './components/LoadingState';
 
-// Lazy-loaded pages for performance
 const HomePage = lazy(() => import('./pages/HomePage'));
 const SearchPage = lazy(() => import('./pages/SearchPage'));
 const RentalDetailPage = lazy(() => import('./pages/RentalDetailPage'));
@@ -33,7 +32,7 @@ const App = () => (
         </main>
         <footer className="app__footer">
           <div className="container">
-            <p>AussieRent &copy; 2026 · Data sourced from Kaggle · Built with React</p>
+            <p>TerraRent &copy; 2026 · Data sourced from Kaggle · Built with React</p>
             <p className="footer__disclaimer">
               This application is for educational purposes. QUT CAB230 Assignment.
             </p>

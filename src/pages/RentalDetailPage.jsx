@@ -14,9 +14,7 @@ import { LoadingState, ErrorState } from '../components/LoadingState';
 const formatPrice = (p) =>
   p != null ? `$${Number(p).toLocaleString('en-AU')}/wk` : '—';
 
-/* =========================
-   DESCRIPTION RENDER (SAFE)
-========================= */
+
 const renderDescription = (text) => {
   if (!text) return <p>No description available.</p>;
 
@@ -28,9 +26,7 @@ const renderDescription = (text) => {
     );
 };
 
-/* =========================
-   DETAIL ROW (SAFE)
-========================= */
+
 const DetailRow = ({ label, value }) => {
   const isEmpty =
     value === null ||
@@ -63,9 +59,7 @@ const RentalDetailPage = () => {
 
   const [nearby, setNearby] = useState([]);
 
-  /* =========================
-     LOAD PROPERTY
-  ========================= */
+
   useEffect(() => {
     setLoading(true);
     setError(null);
@@ -91,9 +85,7 @@ const RentalDetailPage = () => {
       .finally(() => setLoading(false));
   }, [id]);
 
-  /* =========================
-     LOAD RATING
-  ========================= */
+ 
   useEffect(() => {
     if (!user) return;
 
@@ -108,9 +100,7 @@ const RentalDetailPage = () => {
       .finally(() => setRatingLoading(false));
   }, [id, user]);
 
-  /* =========================
-     RATE PROPERTY
-  ========================= */
+
   const handleRate = useCallback(
     async (star) => {
       if (!user) {
@@ -147,9 +137,7 @@ const RentalDetailPage = () => {
     <div className="detail-page">
       <div className="container">
 
-        {/* =========================
-            HEADER NAV
-        ========================= */}
+
         <nav className="breadcrumb">
             <button
               className="breadcrumb__link"
@@ -177,13 +165,7 @@ const RentalDetailPage = () => {
           </nav>
 
         <div className="detail-page__grid">
-
-          {/* =========================
-              LEFT
-          ========================= */}
           <div className="detail-page__info">
-
-            {/* HEADER */}
             <div className="detail-page__header">
               <div>
                 <span className="badge badge--lg">
@@ -204,7 +186,6 @@ const RentalDetailPage = () => {
               </div>
             </div>
 
-            {/* STATS (FIXED GRID UI) */}
             <div className="detail-stats">
               <div className="detail-stat">
                 <span className="detail-stat__icon">🛏</span>
@@ -225,7 +206,6 @@ const RentalDetailPage = () => {
               </div>
             </div>
 
-          {/* DETAILS */}
           <div className="detail-card">
             <h2 className="detail-card__title">Property Details</h2>
 
@@ -282,7 +262,6 @@ const RentalDetailPage = () => {
             />
           </div>
 
-            {/* DESCRIPTION */}
             <div className="detail-card">
               <h2 className="detail-card__title">Description</h2>
               <div className="detail-description">
@@ -290,7 +269,6 @@ const RentalDetailPage = () => {
               </div>
             </div>
 
-            {/* RATINGS */}
             <div className="detail-card">
               <h2 className="detail-card__title">Ratings</h2>
 
@@ -357,9 +335,6 @@ const RentalDetailPage = () => {
             </div>
           </div>
 
-          {/* =========================
-              RIGHT
-          ========================= */}
           <div className="detail-page__map-col">
 
             {hasCoords ? (

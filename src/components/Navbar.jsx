@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="navbar">
       <NavLink to="/" className="navbar__brand">
         <img  src={logo} alt="Logo" className="navbar__brand-icon" />
-        <span className="navbar__brand-text">AussieRent</span>
+        <span className="navbar__brand-text">TerraRent</span>
       </NavLink>
 
       <button

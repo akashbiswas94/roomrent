@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import logo from '../assets/logo.png';
 
 const RegisterPage = () => {
   const { register, login } = useAuth();
@@ -47,7 +48,7 @@ const RegisterPage = () => {
     <div className="auth-page">
       <div className="auth-card">
         <div className="auth-card__header">
-          <span className="auth-card__icon">🏠</span>
+          <img  src={logo} alt="Logo" className="navbar__brand-icon" />
           <h1 className="auth-card__title">Create Account</h1>
           <p className="auth-card__subtitle">Join to rate and track Australian rentals.</p>
         </div>
